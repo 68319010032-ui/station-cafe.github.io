@@ -3,209 +3,242 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>คาเฟ่ริมทาง</title>
+<title>สถานีแวะพักคาเฟ่</title>
 
 <style>
 *{
     margin:0;
     padding:0;
     box-sizing:border-box;
-    font-family:'Segoe UI',sans-serif;
+    font-family: "Sarabun", sans-serif;
 }
 
 body{
-    background:#f8f4ee;
+    background:#f5f5f5;
     color:#333;
 }
 
-/* Navbar */
-nav{
-    background:#6f4e37;
-    color:white;
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    padding:15px 8%;
-    position:sticky;
-    top:0;
-}
-
-nav ul{
-    display:flex;
-    list-style:none;
-}
-
-nav ul li{
-    margin-left:20px;
-}
-
-nav ul li a{
-    color:white;
-    text-decoration:none;
-}
-
-/* Hero */
-.hero{
-    height:90vh;
-    background:linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)),
-    url('https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=1600&q=80');
+header{
+    background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),
+    url("https://images.unsplash.com/photo-1495474472287-4d71bcdd2085");
     background-size:cover;
     background-position:center;
+    height:400px;
+    color:white;
     display:flex;
     justify-content:center;
     align-items:center;
     text-align:center;
-    color:white;
 }
 
-.hero-content h1{
+header h1{
     font-size:3rem;
-    margin-bottom:15px;
 }
 
-.hero-content p{
+header p{
     font-size:1.2rem;
-    margin-bottom:20px;
+    margin-top:10px;
 }
 
-.btn{
-    background:#d4a373;
-    color:white;
-    padding:12px 25px;
-    text-decoration:none;
-    border-radius:30px;
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+    padding:40px 0;
 }
 
-/* Sections */
-section{
-    padding:70px 10%;
-}
-
-h2{
+.section-title{
     text-align:center;
     margin-bottom:30px;
-    color:#6f4e37;
+    color:#6b4226;
 }
 
-/* About */
-.about{
-    text-align:center;
-    line-height:1.8;
-}
-
-/* Menu */
-.menu-container{
+.menu-grid{
     display:grid;
     grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
     gap:20px;
 }
 
-.menu-card{
+.card{
     background:white;
+    padding:20px;
     border-radius:10px;
-    overflow:hidden;
-    box-shadow:0 3px 10px rgba(0,0,0,.1);
+    box-shadow:0 3px 10px rgba(0,0,0,0.1);
+    transition:0.3s;
 }
 
-.menu-card img{
-    width:100%;
-    height:200px;
-    object-fit:cover;
+.card:hover{
+    transform:translateY(-5px);
 }
 
-.menu-card h3{
-    padding:15px;
+.card h3{
+    color:#6b4226;
+    margin-bottom:10px;
 }
 
-.menu-card p{
-    padding:0 15px 15px;
+.price{
+    color:#d35400;
+    font-weight:bold;
+    margin-top:10px;
 }
 
-/* Contact */
-.contact{
-    text-align:center;
-    line-height:2;
-}
-
-/* Footer */
 footer{
-    background:#6f4e37;
+    background:#6b4226;
     color:white;
     text-align:center;
     padding:20px;
+    margin-top:40px;
 }
 </style>
-</head>
 
+</head>
 <body>
 
-<nav>
-    <h2>☕ คาเฟ่ริมทาง</h2>
-    <ul>
-        <li><a href="#home">หน้าแรก</a></li>
-        <li><a href="#about">เกี่ยวกับเรา</a></li>
-        <li><a href="#menu">เมนู</a></li>
-        <li><a href="#contact">ติดต่อ</a></li>
-    </ul>
-</nav>
-
-<section class="hero" id="home">
-    <div class="hero-content">
-        <h1>คาเฟ่ริมทาง</h1>
-        <p>จิบกาแฟหอมกรุ่น พักผ่อนระหว่างการเดินทาง</p>
-        <a href="#menu" class="btn">ดูเมนู</a>
+<header>
+    <div>
+        <h1>☕ สถานีแวะพักคาเฟ่</h1>
+        <p>จุดพักรถ เติมพลังด้วยกาแฟ ชา และขนมเค้กแสนอร่อย</p>
     </div>
-</section>
+</header>
 
-<section id="about">
-    <h2>เกี่ยวกับเรา</h2>
-    <div class="about">
-        <p>
-            คาเฟ่ริมทางเป็นร้านกาแฟบรรยากาศอบอุ่น เหมาะสำหรับนักเดินทาง
-            และผู้ที่ต้องการพักผ่อนระหว่างทาง พร้อมเสิร์ฟกาแฟสด
-            เครื่องดื่มเย็น และเบเกอรี่อบใหม่ทุกวัน
-        </p>
-    </div>
-</section>
+<div class="container">
 
-<section id="menu">
-    <h2>เมนูแนะนำ</h2>
+    <h2 class="section-title">เมนูทั้งหมด 20 รายการ</h2>
 
-    <div class="menu-container">
+    <div class="menu-grid">
 
-        <div class="menu-card">
-            <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=800&q=80">
-            <h3>เอสเปรสโซ่</h3>
-            <p>ราคา 55 บาท</p>
+        <!-- กาแฟ 8 รายการ -->
+        <div class="card">
+            <h3>☕ อเมริกาโน่</h3>
+            <p>กาแฟดำหอมเข้ม สดชื่น</p>
+            <div class="price">55 บาท</div>
         </div>
 
-        <div class="menu-card">
-            <img src="https://images.unsplash.com/photo-1517701604599-bb29b565090c?auto=format&fit=crop&w=800&q=80">
-            <h3>ลาเต้เย็น</h3>
-            <p>ราคา 65 บาท</p>
+        <div class="card">
+            <h3>☕ เอสเพรสโซ่</h3>
+            <p>กาแฟเข้มข้นสำหรับคอกาแฟ</p>
+            <div class="price">60 บาท</div>
         </div>
 
-        <div class="menu-card">
-            <img src="https://images.unsplash.com/photo-1551024709-8f23befc6cf7?auto=format&fit=crop&w=800&q=80">
-            <h3>เค้กช็อกโกแลต</h3>
-            <p>ราคา 75 บาท</p>
+        <div class="card">
+            <h3>☕ คาปูชิโน่</h3>
+            <p>กาแฟนุ่มพร้อมฟองนม</p>
+            <div class="price">65 บาท</div>
+        </div>
+
+        <div class="card">
+            <h3>☕ ลาเต้</h3>
+            <p>กาแฟผสมนมรสละมุน</p>
+            <div class="price">65 บาท</div>
+        </div>
+
+        <div class="card">
+            <h3>☕ มอคค่า</h3>
+            <p>กาแฟผสมช็อกโกแลต</p>
+            <div class="price">70 บาท</div>
+        </div>
+
+        <div class="card">
+            <h3>☕ คาราเมลมัคคิอาโต้</h3>
+            <p>หอมหวานคาราเมล</p>
+            <div class="price">75 บาท</div>
+        </div>
+
+        <div class="card">
+            <h3>☕ กาแฟน้ำผึ้ง</h3>
+            <p>หวานธรรมชาติจากน้ำผึ้ง</p>
+            <div class="price">70 บาท</div>
+        </div>
+
+        <div class="card">
+            <h3>☕ กาแฟส้ม</h3>
+            <p>สดชื่นด้วยน้ำส้มแท้</p>
+            <div class="price">80 บาท</div>
+        </div>
+
+        <!-- ชา 6 รายการ -->
+        <div class="card">
+            <h3>🍵 ชาไทย</h3>
+            <p>ชาไทยเข้มข้นสูตรดั้งเดิม</p>
+            <div class="price">55 บาท</div>
+        </div>
+
+        <div class="card">
+            <h3>🍵 ชาเขียวมัทฉะ</h3>
+            <p>มัทฉะแท้จากญี่ปุ่น</p>
+            <div class="price">65 บาท</div>
+        </div>
+
+        <div class="card">
+            <h3>🍵 ชามะนาว</h3>
+            <p>เปรี้ยวหวานสดชื่น</p>
+            <div class="price">50 บาท</div>
+        </div>
+
+        <div class="card">
+            <h3>🍵 ชาพีช</h3>
+            <p>กลิ่นหอมพีชธรรมชาติ</p>
+            <div class="price">60 บาท</div>
+        </div>
+
+        <div class="card">
+            <h3>🍵 ชานมไต้หวัน</h3>
+            <p>หอมมันสไตล์ไต้หวัน</p>
+            <div class="price">65 บาท</div>
+        </div>
+
+        <div class="card">
+            <h3>🍵 ชาเบอร์รี่</h3>
+            <p>หวานอมเปรี้ยวจากผลไม้</p>
+            <div class="price">60 บาท</div>
+        </div>
+
+        <!-- เค้ก 6 รายการ -->
+        <div class="card">
+            <h3>🍰 เค้กช็อกโกแลต</h3>
+            <p>เข้มข้นด้วยโกโก้แท้</p>
+            <div class="price">95 บาท</div>
+        </div>
+
+        <div class="card">
+            <h3>🍰 เค้กส้ม</h3>
+            <p>รสเปรี้ยวหวานสดชื่น</p>
+            <div class="price">90 บาท</div>
+        </div>
+
+        <div class="card">
+            <h3>🍰 ชีสเค้ก</h3>
+            <p>เนื้อนุ่มละลายในปาก</p>
+            <div class="price">110 บาท</div>
+        </div>
+
+        <div class="card">
+            <h3>🍰 เรดเวลเวท</h3>
+            <p>เค้กสีแดงเนื้อนุ่ม</p>
+            <div class="price">105 บาท</div>
+        </div>
+
+        <div class="card">
+            <h3>🍰 บลูเบอร์รี่ชีสเค้ก</h3>
+            <p>หอมชีสและบลูเบอร์รี่</p>
+            <div class="price">115 บาท</div>
+        </div>
+
+        <div class="card">
+            <h3>🍰 เค้กมะพร้าว</h3>
+            <p>หอมมะพร้าวอ่อนแท้</p>
+            <div class="price">95 บาท</div>
         </div>
 
     </div>
-</section>
 
-<section id="contact">
-    <h2>ติดต่อเรา</h2>
-    <div class="contact">
-        <p>📍 99 ถนนสายหลัก ตำบลตัวอย่าง จังหวัดสกลนคร</p>
-        <p>📞 08X-XXX-XXXX</p>
-        <p>📧 roadsidecafe@email.com</p>
-        <p>🕒 เปิดทุกวัน 07:00 - 18:00 น.</p>
-    </div>
-</section>
+</div>
 
 <footer>
-    <p>© 2026 คาเฟ่ริมทาง | Roadside Café</p>
+    <h3>📍 สถานีแวะพักคาเฟ่</h3>
+    <p>เปิดบริการทุกวัน 07:00 - 20:00 น.</p>
+    <p>โทร 08X-XXX-XXXX</p>
+    <p>© 2026 Rest Stop Café</p>
 </footer>
 
 </body>
