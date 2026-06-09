@@ -10,20 +10,43 @@
     margin:0;
     padding:0;
     box-sizing:border-box;
-    font-family: "Sarabun", sans-serif;
+    font-family:'Sarabun',sans-serif;
 }
 
 body{
-    background:#f5f5f5;
-    color:#333;
+    background:#f8f8f8;
+}
+
+nav{
+    background:#5d4037;
+    display:flex;
+    justify-content:space-between;
+    padding:15px 50px;
+    color:white;
+    position:sticky;
+    top:0;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+}
+
+nav ul li{
+    margin-left:20px;
+}
+
+nav ul li a{
+    color:white;
+    text-decoration:none;
 }
 
 header{
-    background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),
-    url("https://images.unsplash.com/photo-1495474472287-4d71bcdd2085");
+    height:500px;
+    background:linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)),
+    url('https://images.unsplash.com/photo-1495474472287-4d71bcdd2085');
     background-size:cover;
     background-position:center;
-    height:400px;
     color:white;
     display:flex;
     justify-content:center;
@@ -32,25 +55,17 @@ header{
 }
 
 header h1{
-    font-size:3rem;
+    font-size:60px;
 }
 
-header p{
-    font-size:1.2rem;
-    margin-top:10px;
+section{
+    padding:60px 10%;
 }
 
-.container{
-    width:90%;
-    max-width:1200px;
-    margin:auto;
-    padding:40px 0;
-}
-
-.section-title{
+h2{
     text-align:center;
     margin-bottom:30px;
-    color:#6b4226;
+    color:#5d4037;
 }
 
 .menu-grid{
@@ -63,183 +78,216 @@ header p{
     background:white;
     padding:20px;
     border-radius:10px;
-    box-shadow:0 3px 10px rgba(0,0,0,0.1);
-    transition:0.3s;
-}
-
-.card:hover{
-    transform:translateY(-5px);
+    box-shadow:0 2px 10px rgba(0,0,0,.1);
 }
 
 .card h3{
-    color:#6b4226;
     margin-bottom:10px;
 }
 
 .price{
     color:#d35400;
     font-weight:bold;
-    margin-top:10px;
+    margin:10px 0;
+}
+
+button{
+    background:#5d4037;
+    color:white;
+    border:none;
+    padding:10px;
+    width:100%;
+    cursor:pointer;
+    border-radius:5px;
+}
+
+button:hover{
+    background:#795548;
+}
+
+.login-box{
+    max-width:400px;
+    margin:auto;
+    background:white;
+    padding:20px;
+    border-radius:10px;
+}
+
+input{
+    width:100%;
+    padding:10px;
+    margin:10px 0;
+}
+
+.cart{
+    background:white;
+    padding:20px;
+    border-radius:10px;
 }
 
 footer{
-    background:#6b4226;
+    background:#5d4037;
     color:white;
     text-align:center;
     padding:20px;
-    margin-top:40px;
 }
 </style>
-
 </head>
+
 <body>
 
-<header>
+<nav>
+    <h3>☕ สถานีแวะพักคาเฟ่</h3>
+    <ul>
+        <li><a href="#home">หน้าแรก</a></li>
+        <li><a href="#about">เกี่ยวกับร้าน</a></li>
+        <li><a href="#drink">เมนูเครื่องดื่ม</a></li>
+        <li><a href="#bakery">เมนูเบเกอรี่</a></li>
+        <li><a href="#promo">โปรโมชั่น</a></li>
+        <li><a href="#contact">ติดต่อเรา</a></li>
+    </ul>
+</nav>
+
+<header id="home">
     <div>
         <h1>☕ สถานีแวะพักคาเฟ่</h1>
-        <p>จุดพักรถ เติมพลังด้วยกาแฟ ชา และขนมเค้กแสนอร่อย</p>
+        <p>พักรถ พักคน เติมความสดชื่นระหว่างการเดินทาง</p>
     </div>
 </header>
 
-<div class="container">
-
-    <h2 class="section-title">เมนูทั้งหมด 20 รายการ</h2>
-
-    <div class="menu-grid">
-
-        <!-- กาแฟ 8 รายการ -->
-        <div class="card">
-            <h3>☕ อเมริกาโน่</h3>
-            <p>กาแฟดำหอมเข้ม สดชื่น</p>
-            <div class="price">55 บาท</div>
-        </div>
-
-        <div class="card">
-            <h3>☕ เอสเพรสโซ่</h3>
-            <p>กาแฟเข้มข้นสำหรับคอกาแฟ</p>
-            <div class="price">60 บาท</div>
-        </div>
-
-        <div class="card">
-            <h3>☕ คาปูชิโน่</h3>
-            <p>กาแฟนุ่มพร้อมฟองนม</p>
-            <div class="price">65 บาท</div>
-        </div>
-
-        <div class="card">
-            <h3>☕ ลาเต้</h3>
-            <p>กาแฟผสมนมรสละมุน</p>
-            <div class="price">65 บาท</div>
-        </div>
-
-        <div class="card">
-            <h3>☕ มอคค่า</h3>
-            <p>กาแฟผสมช็อกโกแลต</p>
-            <div class="price">70 บาท</div>
-        </div>
-
-        <div class="card">
-            <h3>☕ คาราเมลมัคคิอาโต้</h3>
-            <p>หอมหวานคาราเมล</p>
-            <div class="price">75 บาท</div>
-        </div>
-
-        <div class="card">
-            <h3>☕ กาแฟน้ำผึ้ง</h3>
-            <p>หวานธรรมชาติจากน้ำผึ้ง</p>
-            <div class="price">70 บาท</div>
-        </div>
-
-        <div class="card">
-            <h3>☕ กาแฟส้ม</h3>
-            <p>สดชื่นด้วยน้ำส้มแท้</p>
-            <div class="price">80 บาท</div>
-        </div>
-
-        <!-- ชา 6 รายการ -->
-        <div class="card">
-            <h3>🍵 ชาไทย</h3>
-            <p>ชาไทยเข้มข้นสูตรดั้งเดิม</p>
-            <div class="price">55 บาท</div>
-        </div>
-
-        <div class="card">
-            <h3>🍵 ชาเขียวมัทฉะ</h3>
-            <p>มัทฉะแท้จากญี่ปุ่น</p>
-            <div class="price">65 บาท</div>
-        </div>
-
-        <div class="card">
-            <h3>🍵 ชามะนาว</h3>
-            <p>เปรี้ยวหวานสดชื่น</p>
-            <div class="price">50 บาท</div>
-        </div>
-
-        <div class="card">
-            <h3>🍵 ชาพีช</h3>
-            <p>กลิ่นหอมพีชธรรมชาติ</p>
-            <div class="price">60 บาท</div>
-        </div>
-
-        <div class="card">
-            <h3>🍵 ชานมไต้หวัน</h3>
-            <p>หอมมันสไตล์ไต้หวัน</p>
-            <div class="price">65 บาท</div>
-        </div>
-
-        <div class="card">
-            <h3>🍵 ชาเบอร์รี่</h3>
-            <p>หวานอมเปรี้ยวจากผลไม้</p>
-            <div class="price">60 บาท</div>
-        </div>
-
-        <!-- เค้ก 6 รายการ -->
-        <div class="card">
-            <h3>🍰 เค้กช็อกโกแลต</h3>
-            <p>เข้มข้นด้วยโกโก้แท้</p>
-            <div class="price">95 บาท</div>
-        </div>
-
-        <div class="card">
-            <h3>🍰 เค้กส้ม</h3>
-            <p>รสเปรี้ยวหวานสดชื่น</p>
-            <div class="price">90 บาท</div>
-        </div>
-
-        <div class="card">
-            <h3>🍰 ชีสเค้ก</h3>
-            <p>เนื้อนุ่มละลายในปาก</p>
-            <div class="price">110 บาท</div>
-        </div>
-
-        <div class="card">
-            <h3>🍰 เรดเวลเวท</h3>
-            <p>เค้กสีแดงเนื้อนุ่ม</p>
-            <div class="price">105 บาท</div>
-        </div>
-
-        <div class="card">
-            <h3>🍰 บลูเบอร์รี่ชีสเค้ก</h3>
-            <p>หอมชีสและบลูเบอร์รี่</p>
-            <div class="price">115 บาท</div>
-        </div>
-
-        <div class="card">
-            <h3>🍰 เค้กมะพร้าว</h3>
-            <p>หอมมะพร้าวอ่อนแท้</p>
-            <div class="price">95 บาท</div>
-        </div>
-
+<section id="login">
+    <h2>เข้าสู่ระบบ</h2>
+    <div class="login-box">
+        <input type="text" id="username" placeholder="ชื่อผู้ใช้">
+        <input type="password" id="password" placeholder="รหัสผ่าน">
+        <button onclick="login()">เข้าสู่ระบบ</button>
+        <p id="loginResult"></p>
     </div>
+</section>
+
+<section id="about">
+    <h2>เกี่ยวกับร้าน</h2>
+    <p align="center">
+        สถานีแวะพักคาเฟ่ เป็นร้านกาแฟและเบเกอรี่สำหรับนักเดินทาง
+        ให้บริการเครื่องดื่มคุณภาพ ขนมสดใหม่ และมุมพักผ่อนที่อบอุ่น
+    </p>
+</section>
+
+<section id="drink">
+<h2>เมนูเครื่องดื่ม (14 รายการ)</h2>
+
+<div class="menu-grid">
+
+<div class="card"><h3>อเมริกาโน่</h3><p class="price">55 บาท</p><button onclick="addItem('อเมริกาโน่',55)">สั่งซื้อ</button></div>
+
+<div class="card"><h3>เอสเพรสโซ่</h3><p class="price">60 บาท</p><button onclick="addItem('เอสเพรสโซ่',60)">สั่งซื้อ</button></div>
+
+<div class="card"><h3>ลาเต้</h3><p class="price">65 บาท</p><button onclick="addItem('ลาเต้',65)">สั่งซื้อ</button></div>
+
+<div class="card"><h3>คาปูชิโน่</h3><p class="price">65 บาท</p><button onclick="addItem('คาปูชิโน่',65)">สั่งซื้อ</button></div>
+
+<div class="card"><h3>มอคค่า</h3><p class="price">70 บาท</p><button onclick="addItem('มอคค่า',70)">สั่งซื้อ</button></div>
+
+<div class="card"><h3>คาราเมลมัคคิอาโต้</h3><p class="price">75 บาท</p><button onclick="addItem('คาราเมลมัคคิอาโต้',75)">สั่งซื้อ</button></div>
+
+<div class="card"><h3>กาแฟส้ม</h3><p class="price">80 บาท</p><button onclick="addItem('กาแฟส้ม',80)">สั่งซื้อ</button></div>
+
+<div class="card"><h3>กาแฟน้ำผึ้ง</h3><p class="price">70 บาท</p><button onclick="addItem('กาแฟน้ำผึ้ง',70)">สั่งซื้อ</button></div>
+
+<div class="card"><h3>ชาไทย</h3><p class="price">55 บาท</p><button onclick="addItem('ชาไทย',55)">สั่งซื้อ</button></div>
+
+<div class="card"><h3>ชาเขียว</h3><p class="price">60 บาท</p><button onclick="addItem('ชาเขียว',60)">สั่งซื้อ</button></div>
+
+<div class="card"><h3>ชาพีช</h3><p class="price">60 บาท</p><button onclick="addItem('ชาพีช',60)">สั่งซื้อ</button></div>
+
+<div class="card"><h3>ชามะนาว</h3><p class="price">50 บาท</p><button onclick="addItem('ชามะนาว',50)">สั่งซื้อ</button></div>
+
+<div class="card"><h3>ชานมไต้หวัน</h3><p class="price">65 บาท</p><button onclick="addItem('ชานมไต้หวัน',65)">สั่งซื้อ</button></div>
+
+<div class="card"><h3>ชาเบอร์รี่</h3><p class="price">60 บาท</p><button onclick="addItem('ชาเบอร์รี่',60)">สั่งซื้อ</button></div>
 
 </div>
+</section>
+
+<section id="bakery">
+<h2>เมนูเบเกอรี่ (6 รายการ)</h2>
+
+<div class="menu-grid">
+
+<div class="card"><h3>เค้กช็อกโกแลต</h3><p class="price">95 บาท</p><button onclick="addItem('เค้กช็อกโกแลต',95)">สั่งซื้อ</button></div>
+
+<div class="card"><h3>เค้กส้ม</h3><p class="price">90 บาท</p><button onclick="addItem('เค้กส้ม',90)">สั่งซื้อ</button></div>
+
+<div class="card"><h3>ชีสเค้ก</h3><p class="price">110 บาท</p><button onclick="addItem('ชีสเค้ก',110)">สั่งซื้อ</button></div>
+
+<div class="card"><h3>เรดเวลเวท</h3><p class="price">105 บาท</p><button onclick="addItem('เรดเวลเวท',105)">สั่งซื้อ</button></div>
+
+<div class="card"><h3>บลูเบอร์รี่ชีสเค้ก</h3><p class="price">115 บาท</p><button onclick="addItem('บลูเบอร์รี่ชีสเค้ก',115)">สั่งซื้อ</button></div>
+
+<div class="card"><h3>เค้กมะพร้าว</h3><p class="price">95 บาท</p><button onclick="addItem('เค้กมะพร้าว',95)">สั่งซื้อ</button></div>
+
+</div>
+</section>
+
+<section id="promo">
+    <h2>โปรโมชั่น</h2>
+    <div class="cart">
+        <p>🎉 ซื้อเครื่องดื่ม 2 แก้ว ลด 10%</p>
+        <p>🎉 ซื้อเค้ก 2 ชิ้น แถมคุกกี้ 1 ชิ้น</p>
+        <p>🎉 สมาชิกใหม่รับส่วนลด 20 บาท</p>
+    </div>
+</section>
+
+<section>
+    <h2>ตะกร้าสินค้า</h2>
+
+    <div class="cart">
+        <ul id="cartList"></ul>
+
+        <h3>ยอดรวม : <span id="total">0</span> บาท</h3>
+    </div>
+</section>
+
+<section id="contact">
+    <h2>ติดต่อเรา</h2>
+    <p align="center">
+        📍 สกลนคร ประเทศไทย<br>
+        ☎ 08X-XXX-XXXX<br>
+        📧 reststopcafe@email.com
+    </p>
+</section>
 
 <footer>
-    <h3>📍 สถานีแวะพักคาเฟ่</h3>
-    <p>เปิดบริการทุกวัน 07:00 - 20:00 น.</p>
-    <p>โทร 08X-XXX-XXXX</p>
-    <p>© 2026 Rest Stop Café</p>
+© 2026 สถานีแวะพักคาเฟ่
 </footer>
+
+<script>
+let total = 0;
+
+function addItem(name, price){
+    let li = document.createElement("li");
+    li.innerHTML = name + " - " + price + " บาท";
+    document.getElementById("cartList").appendChild(li);
+
+    total += price;
+    document.getElementById("total").innerHTML = total;
+}
+
+function login(){
+    let user = document.getElementById("username").value;
+    let pass = document.getElementById("password").value;
+
+    if(user === "admin" && pass === "1234"){
+        document.getElementById("loginResult").innerHTML =
+        "✅ เข้าสู่ระบบสำเร็จ";
+        document.getElementById("loginResult").style.color="green";
+    }else{
+        document.getElementById("loginResult").innerHTML =
+        "❌ ชื่อผู้ใช้หรือรหัสผ่านไม่ถูกต้อง";
+        document.getElementById("loginResult").style.color="red";
+    }
+}
+</script>
 
 </body>
 </html>
