@@ -4,174 +4,19 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Station Cafe</title>
-<link rel="stylesheet" href="style.css">
-</head>
-<body>
 
-<nav>
-    <div class="logo">☕ Station Cafe</div>
-
-    <ul>
-        <li><a href="#home">หน้าแรก</a></li>
-        <li><a href="#about">เกี่ยวกับร้าน</a></li>
-        <li><a href="#drinks">เมนูเครื่องดื่ม</a></li>
-        <li><a href="#bakery">เมนูเบเกอรี่</a></li>
-        <li><a href="#promo">โปรโมชั่น</a></li>
-        <li><a href="#contact">ติดต่อเรา</a></li>
-    </ul>
-</nav>
-
-<header id="home">
-    <h1>Station Cafe</h1>
-    <p>จุดพัก เติมพลังระหว่างการเดินทาง</p>
-</header>
-
-<section id="about">
-    <h2>เกี่ยวกับร้าน</h2>
-    <p>
-        Station Cafe เป็นคาเฟ่สไตล์สถานีแวะพัก
-        ให้บริการกาแฟ ชา และเบเกอรี่คุณภาพ
-        พร้อมมุมพักผ่อนสำหรับนักเดินทาง
-    </p>
-</section>
-
-<section id="drinks">
-    <h2>เมนูเครื่องดื่ม</h2>
-
-    <div class="menu-container">
-
-        <div class="card">
-            <h3>อเมริกาโน่</h3>
-            <p>55 บาท</p>
-            <button onclick="addToCart('อเมริกาโน่',55)">เพิ่มลงรถเข็น</button>
-        </div>
-
-        <div class="card">
-            <h3>เอสเปรสโซ่</h3>
-            <p>60 บาท</p>
-            <button onclick="addToCart('เอสเปรสโซ่',60)">เพิ่มลงรถเข็น</button>
-        </div>
-
-        <div class="card">
-            <h3>ลาเต้</h3>
-            <p>65 บาท</p>
-            <button onclick="addToCart('ลาเต้',65)">เพิ่มลงรถเข็น</button>
-        </div>
-
-        <div class="card">
-            <h3>คาปูชิโน่</h3>
-            <p>65 บาท</p>
-            <button onclick="addToCart('คาปูชิโน่',65)">เพิ่มลงรถเข็น</button>
-        </div>
-
-        <div class="card">
-            <h3>มอคค่า</h3>
-            <p>70 บาท</p>
-            <button onclick="addToCart('มอคค่า',70)">เพิ่มลงรถเข็น</button>
-        </div>
-
-        <div class="card">
-            <h3>คาราเมลมัคคิอาโต้</h3>
-            <p>75 บาท</p>
-            <button onclick="addToCart('คาราเมลมัคคิอาโต้',75)">เพิ่มลงรถเข็น</button>
-        </div>
-
-        <div class="card">
-            <h3>ชาไทย</h3>
-            <p>55 บาท</p>
-            <button onclick="addToCart('ชาไทย',55)">เพิ่มลงรถเข็น</button>
-        </div>
-
-        <div class="card">
-            <h3>ชาเขียว</h3>
-            <p>60 บาท</p>
-            <button onclick="addToCart('ชาเขียว',60)">เพิ่มลงรถเข็น</button>
-        </div>
-
-        <div class="card">
-            <h3>ชามะนาว</h3>
-            <p>50 บาท</p>
-            <button onclick="addToCart('ชามะนาว',50)">เพิ่มลงรถเข็น</button>
-        </div>
-
-        <div class="card">
-            <h3>ชานมไต้หวัน</h3>
-            <p>65 บาท</p>
-            <button onclick="addToCart('ชานมไต้หวัน',65)">เพิ่มลงรถเข็น</button>
-        </div>
-
-        <div class="card">
-            <h3>ชาพีช</h3>
-            <p>60 บาท</p>
-            <button onclick="addToCart('ชาพีช',60)">เพิ่มลงรถเข็น</button>
-        </div>
-
-        <div class="card">
-            <h3>ชาเบอร์รี่</h3>
-            <p>60 บาท</p>
-            <button onclick="addToCart('ชาเบอร์รี่',60)">เพิ่มลงรถเข็น</button>
-        </div>
-
-    </div>
-</section>
-
-<section id="bakery">
-    <h2>เมนูเบเกอรี่</h2>
-
-    <div class="menu-container">
-
-        <div class="card"><h3>เค้กช็อกโกแลต</h3><p>95 บาท</p><button onclick="addToCart('เค้กช็อกโกแลต',95)">เพิ่มลงรถเข็น</button></div>
-
-        <div class="card"><h3>เค้กส้ม</h3><p>90 บาท</p><button onclick="addToCart('เค้กส้ม',90)">เพิ่มลงรถเข็น</button></div>
-
-        <div class="card"><h3>ชีสเค้ก</h3><p>110 บาท</p><button onclick="addToCart('ชีสเค้ก',110)">เพิ่มลงรถเข็น</button></div>
-
-        <div class="card"><h3>เรดเวลเวท</h3><p>105 บาท</p><button onclick="addToCart('เรดเวลเวท',105)">เพิ่มลงรถเข็น</button></div>
-
-        <div class="card"><h3>บลูเบอร์รี่ชีสเค้ก</h3><p>115 บาท</p><button onclick="addToCart('บลูเบอร์รี่ชีสเค้ก',115)">เพิ่มลงรถเข็น</button></div>
-
-        <div class="card"><h3>เค้กมะพร้าว</h3><p>95 บาท</p><button onclick="addToCart('เค้กมะพร้าว',95)">เพิ่มลงรถเข็น</button></div>
-
-        <div class="card"><h3>บราวนี่</h3><p>75 บาท</p><button onclick="addToCart('บราวนี่',75)">เพิ่มลงรถเข็น</button></div>
-
-        <div class="card"><h3>ครัวซองต์</h3><p>80 บาท</p><button onclick="addToCart('ครัวซองต์',80)">เพิ่มลงรถเข็น</button></div>
-
-    </div>
-</section>
-
-<section id="promo">
-    <h2>โปรโมชั่น</h2>
-    <p>🎉 ซื้อเครื่องดื่ม 2 แก้ว ลด 10%</p>
-    <p>🎉 ซื้อครบ 300 บาท รับส่วนลด 20 บาท</p>
-</section>
-
-<section id="cart">
-    <h2>รถเข็นสินค้า</h2>
-
-    <ul id="cart-items"></ul>
-
-    <h3>ยอดรวม: <span id="total">0</span> บาท</h3>
-</section>
-
-<section id="contact">
-    <h2>ติดต่อเรา</h2>
-    <p>📍 Station Cafe สถานีแวะพักริมทาง</p>
-    <p>📞 089-999-9999</p>
-    <p>📧 stationcafe@gmail.com</p>
-</section>
-
-<footer>
-    © 2026 Station Cafe
-</footer>
-
-<script src="script.js"></script>
-
-</body>
-</html>
-body{
+<style>
+*{
     margin:0;
-    font-family:Sarabun,sans-serif;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+}
+
+body{
     background:#f5f5f5;
+    color:#333;
+    scroll-behavior:smooth;
 }
 
 nav{
@@ -179,40 +24,65 @@ nav{
     color:white;
     display:flex;
     justify-content:space-between;
-    padding:15px 40px;
+    align-items:center;
+    padding:15px 50px;
+    position:sticky;
+    top:0;
+    z-index:1000;
 }
 
 nav ul{
-    display:flex;
     list-style:none;
+    display:flex;
 }
 
-nav li{
+nav ul li{
     margin-left:20px;
 }
 
-nav a{
+nav ul li a{
     color:white;
     text-decoration:none;
+    font-weight:bold;
 }
 
-header{
-    background:#6d4c41;
-    color:white;
+nav ul li a:hover{
+    color:#ffd54f;
+}
+
+.hero{
+    height:500px;
+    background:linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)),
+    url('https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=1200&q=80');
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    justify-content:center;
+    align-items:center;
     text-align:center;
-    padding:100px 20px;
+    color:white;
+}
+
+.hero h1{
+    font-size:60px;
+}
+
+.hero p{
+    font-size:20px;
+    margin-top:10px;
 }
 
 section{
-    padding:50px;
+    padding:60px 8%;
 }
 
 h2{
     text-align:center;
+    margin-bottom:30px;
     color:#4e342e;
 }
 
-.menu-container{
+.menu-grid{
     display:grid;
     grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
     gap:20px;
@@ -220,18 +90,28 @@ h2{
 
 .card{
     background:white;
+    border-radius:12px;
     padding:20px;
-    border-radius:10px;
-    text-align:center;
     box-shadow:0 2px 10px rgba(0,0,0,.1);
+    text-align:center;
+}
+
+.card h3{
+    margin-bottom:10px;
+}
+
+.price{
+    color:#d35400;
+    font-weight:bold;
+    margin:10px 0;
 }
 
 button{
     background:#6d4c41;
     color:white;
     border:none;
-    padding:10px;
-    border-radius:5px;
+    padding:10px 15px;
+    border-radius:6px;
     cursor:pointer;
 }
 
@@ -239,8 +119,29 @@ button:hover{
     background:#4e342e;
 }
 
-#cart{
+.promo{
+    background:#fff8e1;
+    border-left:5px solid orange;
+    padding:20px;
+    border-radius:10px;
+}
+
+.cart{
     background:white;
+    padding:25px;
+    border-radius:10px;
+    box-shadow:0 2px 10px rgba(0,0,0,.1);
+}
+
+#cart-items li{
+    margin-bottom:8px;
+}
+
+.total{
+    margin-top:15px;
+    font-size:22px;
+    color:#d35400;
+    font-weight:bold;
 }
 
 footer{
@@ -249,16 +150,180 @@ footer{
     text-align:center;
     padding:20px;
 }
+</style>
+
+</head>
+<body>
+
+<!-- เมนู -->
+<nav>
+    <h2 style="color:white;">☕ Station Cafe</h2>
+
+    <ul>
+        <li><a href="#home">หน้าแรก</a></li>
+        <li><a href="#about">เกี่ยวกับร้าน</a></li>
+        <li><a href="#drink">เมนูเครื่องดื่ม</a></li>
+        <li><a href="#bakery">เมนูเบเกอรี่</a></li>
+        <li><a href="#promo">โปรโมชั่น</a></li>
+        <li><a href="#contact">ติดต่อเรา</a></li>
+    </ul>
+</nav>
+
+<!-- หน้าแรก -->
+<section class="hero" id="home">
+    <div>
+        <h1>Station Cafe</h1>
+        <p>จุดแวะพัก เติมพลังด้วยกาแฟและเบเกอรี่คุณภาพ</p>
+    </div>
+</section>
+
+<!-- เกี่ยวกับร้าน -->
+<section id="about">
+    <h2>เกี่ยวกับร้าน</h2>
+    <p style="text-align:center;max-width:900px;margin:auto;">
+        Station Cafe เป็นคาเฟ่สไตล์สถานีแวะพักสำหรับนักเดินทาง
+        ให้บริการกาแฟ ชา และเบเกอรี่คุณภาพ พร้อมบรรยากาศอบอุ่น
+        เหมาะสำหรับพักผ่อน ทำงาน และพบปะสังสรรค์
+    </p>
+</section>
+
+<!-- เมนูเครื่องดื่ม -->
+<section id="drink">
+<h2>เมนูเครื่องดื่ม (12 รายการ)</h2>
+
+<div class="menu-grid">
+
+<div class="card"><h3>อเมริกาโน่</h3><p class="price">55 บาท</p><button onclick="addCart('อเมริกาโน่',55)">เพิ่มลงรถเข็น</button></div>
+
+<div class="card"><h3>เอสเปรสโซ่</h3><p class="price">60 บาท</p><button onclick="addCart('เอสเปรสโซ่',60)">เพิ่มลงรถเข็น</button></div>
+
+<div class="card"><h3>ลาเต้</h3><p class="price">65 บาท</p><button onclick="addCart('ลาเต้',65)">เพิ่มลงรถเข็น</button></div>
+
+<div class="card"><h3>คาปูชิโน่</h3><p class="price">65 บาท</p><button onclick="addCart('คาปูชิโน่',65)">เพิ่มลงรถเข็น</button></div>
+
+<div class="card"><h3>มอคค่า</h3><p class="price">70 บาท</p><button onclick="addCart('มอคค่า',70)">เพิ่มลงรถเข็น</button></div>
+
+<div class="card"><h3>คาราเมลมัคคิอาโต้</h3><p class="price">75 บาท</p><button onclick="addCart('คาราเมลมัคคิอาโต้',75)">เพิ่มลงรถเข็น</button></div>
+
+<div class="card"><h3>ชาไทย</h3><p class="price">55 บาท</p><button onclick="addCart('ชาไทย',55)">เพิ่มลงรถเข็น</button></div>
+
+<div class="card"><h3>ชาเขียวมัทฉะ</h3><p class="price">65 บาท</p><button onclick="addCart('ชาเขียวมัทฉะ',65)">เพิ่มลงรถเข็น</button></div>
+
+<div class="card"><h3>ชามะนาว</h3><p class="price">50 บาท</p><button onclick="addCart('ชามะนาว',50)">เพิ่มลงรถเข็น</button></div>
+
+<div class="card"><h3>ชานมไต้หวัน</h3><p class="price">65 บาท</p><button onclick="addCart('ชานมไต้หวัน',65)">เพิ่มลงรถเข็น</button></div>
+
+<div class="card"><h3>ชาพีช</h3><p class="price">60 บาท</p><button onclick="addCart('ชาพีช',60)">เพิ่มลงรถเข็น</button></div>
+
+<div class="card"><h3>ชาเบอร์รี่</h3><p class="price">60 บาท</p><button onclick="addCart('ชาเบอร์รี่',60)">เพิ่มลงรถเข็น</button></div>
+
+</div>
+</section>
+
+<!-- เมนูเบเกอรี่ -->
+<section id="bakery">
+<h2>เมนูเบเกอรี่ (8 รายการ)</h2>
+
+<div class="menu-grid">
+
+<div class="card"><h3>เค้กช็อกโกแลต</h3><p class="price">95 บาท</p><button onclick="addCart('เค้กช็อกโกแลต',95)">เพิ่มลงรถเข็น</button></div>
+
+<div class="card"><h3>เค้กส้ม</h3><p class="price">90 บาท</p><button onclick="addCart('เค้กส้ม',90)">เพิ่มลงรถเข็น</button></div>
+
+<div class="card"><h3>ชีสเค้ก</h3><p class="price">110 บาท</p><button onclick="addCart('ชีสเค้ก',110)">เพิ่มลงรถเข็น</button></div>
+
+<div class="card"><h3>เรดเวลเวท</h3><p class="price">105 บาท</p><button onclick="addCart('เรดเวลเวท',105)">เพิ่มลงรถเข็น</button></div>
+
+<div class="card"><h3>บลูเบอร์รี่ชีสเค้ก</h3><p class="price">115 บาท</p><button onclick="addCart('บลูเบอร์รี่ชีสเค้ก',115)">เพิ่มลงรถเข็น</button></div>
+
+<div class="card"><h3>เค้กมะพร้าว</h3><p class="price">95 บาท</p><button onclick="addCart('เค้กมะพร้าว',95)">เพิ่มลงรถเข็น</button></div>
+
+<div class="card"><h3>บราวนี่</h3><p class="price">75 บาท</p><button onclick="addCart('บราวนี่',75)">เพิ่มลงรถเข็น</button></div>
+
+<div class="card"><h3>ครัวซองต์</h3><p class="price">80 บาท</p><button onclick="addCart('ครัวซองต์',80)">เพิ่มลงรถเข็น</button></div>
+
+</div>
+</section>
+
+<!-- โปรโมชั่น -->
+<section id="promo">
+<h2>โปรโมชั่น</h2>
+
+<div class="promo">
+    <h3>🎉 โปรโมชั่นประจำเดือน</h3>
+    <p>☕ ซื้อเครื่องดื่ม 2 แก้ว ลด 10%</p>
+    <p>🍰 ซื้อครบ 300 บาท รับส่วนลด 20 บาท</p>
+    <p>🎁 ซื้อเค้ก 2 ชิ้น แถมคุกกี้ 1 ชิ้น</p>
+</div>
+</section>
+
+<!-- รถเข็น -->
+<section>
+<h2>🛒 รถเข็นสินค้า</h2>
+
+<div class="cart">
+    <ul id="cart-items"></ul>
+
+    <div class="total">
+        ยอดรวม : <span id="total">0</span> บาท
+    </div>
+
+    <br>
+
+    <button onclick="checkout()">
+        คำนวณยอดชำระเงิน
+    </button>
+
+    <h3 id="result" style="margin-top:20px;"></h3>
+</div>
+</section>
+
+<!-- ติดต่อ -->
+<section id="contact">
+<h2>ติดต่อเรา</h2>
+
+<p style="text-align:center;">
+📍 Station Cafe ถนนสายหลัก จังหวัดตัวอย่าง<br><br>
+📞 089-999-9999<br><br>
+📧 stationcafe@gmail.com<br><br>
+🕒 เปิดทุกวัน 07:00 - 20:00 น.
+</p>
+
+</section>
+
+<footer>
+© 2026 Station Cafe | All Rights Reserved
+</footer>
+
+<script>
+
 let total = 0;
 
-function addToCart(name, price){
+function addCart(name, price){
 
-    let item = document.createElement("li");
-    item.textContent = `${name} - ${price} บาท`;
+    const li = document.createElement("li");
+    li.textContent = name + " - " + price + " บาท";
 
-    document.getElementById("cart-items").appendChild(item);
+    document.getElementById("cart-items").appendChild(li);
 
     total += price;
 
     document.getElementById("total").innerText = total;
 }
+
+function checkout(){
+
+    let finalPrice = total;
+
+    if(total >= 300){
+        finalPrice = total - 20;
+    }
+
+    document.getElementById("result").innerHTML =
+    "ยอดชำระสุทธิ = " + finalPrice + " บาท";
+}
+
+</script>
+
+</body>
+</html>
