@@ -7,278 +7,286 @@
 
 <style>
 *{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:'Segoe UI',sans-serif;
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Segoe UI',sans-serif;
 }
 
 body{
-    background:#f5f5f5;
-    color:#333;
-    scroll-behavior:smooth;
+background:#f5f5f5;
+color:#333;
 }
 
 nav{
-    background:#4e342e;
-    color:white;
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    padding:15px 50px;
-    position:sticky;
-    top:0;
-    z-index:1000;
+background:#4e342e;
+padding:15px 50px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+position:sticky;
+top:0;
+z-index:1000;
+}
+
+.logo{
+color:white;
+font-size:24px;
+font-weight:bold;
 }
 
 nav ul{
-    list-style:none;
-    display:flex;
+display:flex;
+list-style:none;
 }
 
 nav ul li{
-    margin-left:20px;
+margin-left:20px;
 }
 
 nav ul li a{
-    color:white;
-    text-decoration:none;
-    font-weight:bold;
+color:white;
+text-decoration:none;
+font-weight:bold;
 }
 
 nav ul li a:hover{
-    color:#ffd54f;
+color:#ffd54f;
 }
 
 .hero{
-    height:500px;
-    background:linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)),
-    url('https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=1200&q=80');
-    background-size:cover;
-    background-position:center;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    text-align:center;
-    color:white;
+height:500px;
+background:linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)),
+url('https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=1200&q=80');
+background-size:cover;
+background-position:center;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+color:white;
 }
 
 .hero h1{
-    font-size:60px;
+font-size:60px;
 }
 
 .hero p{
-    font-size:20px;
-    margin-top:10px;
+font-size:20px;
+margin-top:10px;
 }
 
 section{
-    padding:60px 8%;
+padding:60px 8%;
 }
 
 h2{
-    text-align:center;
-    margin-bottom:30px;
-    color:#4e342e;
+text-align:center;
+margin-bottom:30px;
+color:#4e342e;
 }
 
 .menu-grid{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-    gap:20px;
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:20px;
 }
 
 .card{
-    background:white;
-    border-radius:12px;
-    padding:20px;
-    box-shadow:0 2px 10px rgba(0,0,0,.1);
-    text-align:center;
-}
-
-.card h3{
-    margin-bottom:10px;
+background:white;
+padding:20px;
+border-radius:10px;
+box-shadow:0 2px 10px rgba(0,0,0,.1);
+text-align:center;
 }
 
 .price{
-    color:#d35400;
-    font-weight:bold;
-    margin:10px 0;
+font-size:18px;
+font-weight:bold;
+color:#d35400;
+margin:10px 0;
 }
 
 button{
-    background:#6d4c41;
-    color:white;
-    border:none;
-    padding:10px 15px;
-    border-radius:6px;
-    cursor:pointer;
+background:#6d4c41;
+color:white;
+border:none;
+padding:10px 15px;
+border-radius:5px;
+cursor:pointer;
 }
 
 button:hover{
-    background:#4e342e;
+background:#4e342e;
 }
 
 .promo{
-    background:#fff8e1;
-    border-left:5px solid orange;
-    padding:20px;
-    border-radius:10px;
+background:#fff3cd;
+padding:20px;
+border-radius:10px;
 }
 
 .cart{
-    background:white;
-    padding:25px;
-    border-radius:10px;
-    box-shadow:0 2px 10px rgba(0,0,0,.1);
+background:white;
+padding:20px;
+border-radius:10px;
+box-shadow:0 2px 10px rgba(0,0,0,.1);
 }
 
-#cart-items li{
-    margin-bottom:8px;
+#cartItems li{
+margin-bottom:8px;
 }
 
 .total{
-    margin-top:15px;
-    font-size:22px;
-    color:#d35400;
-    font-weight:bold;
+font-size:24px;
+color:#d35400;
+margin-top:15px;
+font-weight:bold;
+}
+
+.pay-btn{
+background:green;
+margin-top:15px;
+}
+
+.pay-btn:hover{
+background:darkgreen;
 }
 
 footer{
-    background:#4e342e;
-    color:white;
-    text-align:center;
-    padding:20px;
+background:#4e342e;
+color:white;
+text-align:center;
+padding:20px;
 }
 </style>
 
 </head>
 <body>
 
-<!-- เมนู -->
 <nav>
-    <h2 style="color:white;">☕ Station Cafe</h2>
+<div class="logo">☕ Station Cafe</div>
 
-    <ul>
-        <li><a href="#home">หน้าแรก</a></li>
-        <li><a href="#about">เกี่ยวกับร้าน</a></li>
-        <li><a href="#drink">เมนูเครื่องดื่ม</a></li>
-        <li><a href="#bakery">เมนูเบเกอรี่</a></li>
-        <li><a href="#promo">โปรโมชั่น</a></li>
-        <li><a href="#contact">ติดต่อเรา</a></li>
-    </ul>
+<ul>
+<li><a href="#home">หน้าแรก</a></li>
+<li><a href="#about">เกี่ยวกับร้าน</a></li>
+<li><a href="#drink">เมนูเครื่องดื่ม</a></li>
+<li><a href="#bakery">เมนูเบเกอรี่</a></li>
+<li><a href="#promo">โปรโมชั่น</a></li>
+<li><a href="#contact">ติดต่อเรา</a></li>
+</ul>
 </nav>
 
-<!-- หน้าแรก -->
 <section class="hero" id="home">
-    <div>
-        <h1>Station Cafe</h1>
-        <p>จุดแวะพัก เติมพลังด้วยกาแฟและเบเกอรี่คุณภาพ</p>
-    </div>
+<div>
+<h1>Station Cafe</h1>
+<p>จุดแวะพัก เติมความสุขทุกการเดินทาง</p>
+</div>
 </section>
 
-<!-- เกี่ยวกับร้าน -->
 <section id="about">
-    <h2>เกี่ยวกับร้าน</h2>
-    <p style="text-align:center;max-width:900px;margin:auto;">
-        Station Cafe เป็นคาเฟ่สไตล์สถานีแวะพักสำหรับนักเดินทาง
-        ให้บริการกาแฟ ชา และเบเกอรี่คุณภาพ พร้อมบรรยากาศอบอุ่น
-        เหมาะสำหรับพักผ่อน ทำงาน และพบปะสังสรรค์
-    </p>
+<h2>เกี่ยวกับร้าน</h2>
+<p style="text-align:center;">
+Station Cafe เป็นคาเฟ่สไตล์สถานีแวะพัก
+ให้บริการกาแฟ ชา และเบเกอรี่คุณภาพ
+พร้อมพื้นที่นั่งพักผ่อนสำหรับทุกคน
+</p>
 </section>
 
-<!-- เมนูเครื่องดื่ม -->
 <section id="drink">
 <h2>เมนูเครื่องดื่ม (12 รายการ)</h2>
 
 <div class="menu-grid">
 
-<div class="card"><h3>อเมริกาโน่</h3><p class="price">55 บาท</p><button onclick="addCart('อเมริกาโน่',55)">เพิ่มลงรถเข็น</button></div>
+<script>
+const drinks = [
+["อเมริกาโน่",55],["เอสเปรสโซ่",60],["ลาเต้",65],
+["คาปูชิโน่",65],["มอคค่า",70],["คาราเมลมัคคิอาโต้",75],
+["ชาไทย",55],["ชาเขียว",60],["ชามะนาว",50],
+["ชานมไต้หวัน",65],["ชาพีช",60],["ชาเบอร์รี่",60]
+];
 
-<div class="card"><h3>เอสเปรสโซ่</h3><p class="price">60 บาท</p><button onclick="addCart('เอสเปรสโซ่',60)">เพิ่มลงรถเข็น</button></div>
-
-<div class="card"><h3>ลาเต้</h3><p class="price">65 บาท</p><button onclick="addCart('ลาเต้',65)">เพิ่มลงรถเข็น</button></div>
-
-<div class="card"><h3>คาปูชิโน่</h3><p class="price">65 บาท</p><button onclick="addCart('คาปูชิโน่',65)">เพิ่มลงรถเข็น</button></div>
-
-<div class="card"><h3>มอคค่า</h3><p class="price">70 บาท</p><button onclick="addCart('มอคค่า',70)">เพิ่มลงรถเข็น</button></div>
-
-<div class="card"><h3>คาราเมลมัคคิอาโต้</h3><p class="price">75 บาท</p><button onclick="addCart('คาราเมลมัคคิอาโต้',75)">เพิ่มลงรถเข็น</button></div>
-
-<div class="card"><h3>ชาไทย</h3><p class="price">55 บาท</p><button onclick="addCart('ชาไทย',55)">เพิ่มลงรถเข็น</button></div>
-
-<div class="card"><h3>ชาเขียวมัทฉะ</h3><p class="price">65 บาท</p><button onclick="addCart('ชาเขียวมัทฉะ',65)">เพิ่มลงรถเข็น</button></div>
-
-<div class="card"><h3>ชามะนาว</h3><p class="price">50 บาท</p><button onclick="addCart('ชามะนาว',50)">เพิ่มลงรถเข็น</button></div>
-
-<div class="card"><h3>ชานมไต้หวัน</h3><p class="price">65 บาท</p><button onclick="addCart('ชานมไต้หวัน',65)">เพิ่มลงรถเข็น</button></div>
-
-<div class="card"><h3>ชาพีช</h3><p class="price">60 บาท</p><button onclick="addCart('ชาพีช',60)">เพิ่มลงรถเข็น</button></div>
-
-<div class="card"><h3>ชาเบอร์รี่</h3><p class="price">60 บาท</p><button onclick="addCart('ชาเบอร์รี่',60)">เพิ่มลงรถเข็น</button></div>
+document.write(drinks.map(item=>`
+<div class="card">
+<h3>${item[0]}</h3>
+<div class="price">${item[1]} บาท</div>
+<button onclick="addCart('${item[0]}',${item[1]})">
+เพิ่มลงรถเข็น
+</button>
+</div>
+`).join(""));
+</script>
 
 </div>
 </section>
 
-<!-- เมนูเบเกอรี่ -->
 <section id="bakery">
 <h2>เมนูเบเกอรี่ (8 รายการ)</h2>
 
 <div class="menu-grid">
 
-<div class="card"><h3>เค้กช็อกโกแลต</h3><p class="price">95 บาท</p><button onclick="addCart('เค้กช็อกโกแลต',95)">เพิ่มลงรถเข็น</button></div>
+<script>
+const bakery = [
+["เค้กช็อกโกแลต",95],
+["เค้กส้ม",90],
+["ชีสเค้ก",110],
+["เรดเวลเวท",105],
+["บลูเบอร์รี่ชีสเค้ก",115],
+["เค้กมะพร้าว",95],
+["บราวนี่",75],
+["ครัวซองต์",80]
+];
 
-<div class="card"><h3>เค้กส้ม</h3><p class="price">90 บาท</p><button onclick="addCart('เค้กส้ม',90)">เพิ่มลงรถเข็น</button></div>
-
-<div class="card"><h3>ชีสเค้ก</h3><p class="price">110 บาท</p><button onclick="addCart('ชีสเค้ก',110)">เพิ่มลงรถเข็น</button></div>
-
-<div class="card"><h3>เรดเวลเวท</h3><p class="price">105 บาท</p><button onclick="addCart('เรดเวลเวท',105)">เพิ่มลงรถเข็น</button></div>
-
-<div class="card"><h3>บลูเบอร์รี่ชีสเค้ก</h3><p class="price">115 บาท</p><button onclick="addCart('บลูเบอร์รี่ชีสเค้ก',115)">เพิ่มลงรถเข็น</button></div>
-
-<div class="card"><h3>เค้กมะพร้าว</h3><p class="price">95 บาท</p><button onclick="addCart('เค้กมะพร้าว',95)">เพิ่มลงรถเข็น</button></div>
-
-<div class="card"><h3>บราวนี่</h3><p class="price">75 บาท</p><button onclick="addCart('บราวนี่',75)">เพิ่มลงรถเข็น</button></div>
-
-<div class="card"><h3>ครัวซองต์</h3><p class="price">80 บาท</p><button onclick="addCart('ครัวซองต์',80)">เพิ่มลงรถเข็น</button></div>
+document.write(bakery.map(item=>`
+<div class="card">
+<h3>${item[0]}</h3>
+<div class="price">${item[1]} บาท</div>
+<button onclick="addCart('${item[0]}',${item[1]})">
+เพิ่มลงรถเข็น
+</button>
+</div>
+`).join(""));
+</script>
 
 </div>
 </section>
 
-<!-- โปรโมชั่น -->
 <section id="promo">
 <h2>โปรโมชั่น</h2>
 
 <div class="promo">
-    <h3>🎉 โปรโมชั่นประจำเดือน</h3>
-    <p>☕ ซื้อเครื่องดื่ม 2 แก้ว ลด 10%</p>
-    <p>🍰 ซื้อครบ 300 บาท รับส่วนลด 20 บาท</p>
-    <p>🎁 ซื้อเค้ก 2 ชิ้น แถมคุกกี้ 1 ชิ้น</p>
+<p>🎉 ซื้อครบ 300 บาท ลดทันที 20 บาท</p>
+<p>🎉 ซื้อเครื่องดื่ม 2 แก้วขึ้นไป รับส่วนลด 10%</p>
+<p>🎉 สมาชิกใหม่รับคูปองฟรี 1 ใบ</p>
 </div>
 </section>
 
-<!-- รถเข็น -->
 <section>
 <h2>🛒 รถเข็นสินค้า</h2>
 
 <div class="cart">
-    <ul id="cart-items"></ul>
 
-    <div class="total">
-        ยอดรวม : <span id="total">0</span> บาท
-    </div>
+<ul id="cartItems"></ul>
 
-    <br>
+<div class="total">
+ยอดรวม : <span id="total">0</span> บาท
+</div>
 
-    <button onclick="checkout()">
-        คำนวณยอดชำระเงิน
-    </button>
+<br>
 
-    <h3 id="result" style="margin-top:20px;"></h3>
+<button onclick="checkout()">
+คำนวณยอดชำระ
+</button>
+
+<button class="pay-btn" onclick="payNow()">
+💳 ชำระเงิน
+</button>
+
+<h3 id="result" style="margin-top:20px;"></h3>
+
 </div>
 </section>
 
-<!-- ติดต่อ -->
 <section id="contact">
 <h2>ติดต่อเรา</h2>
 
@@ -286,41 +294,65 @@ footer{
 📍 Station Cafe ถนนสายหลัก จังหวัดตัวอย่าง<br><br>
 📞 089-999-9999<br><br>
 📧 stationcafe@gmail.com<br><br>
-🕒 เปิดทุกวัน 07:00 - 20:00 น.
+🕒 เปิดทุกวัน 07.00 - 20.00 น.
 </p>
-
 </section>
 
 <footer>
-© 2026 Station Cafe | All Rights Reserved
+© 2026 Station Cafe
 </footer>
 
 <script>
 
 let total = 0;
+let finalPrice = 0;
 
-function addCart(name, price){
+function addCart(name,price){
 
-    const li = document.createElement("li");
-    li.textContent = name + " - " + price + " บาท";
+const li = document.createElement("li");
 
-    document.getElementById("cart-items").appendChild(li);
+li.innerHTML = `${name} - ${price} บาท`;
 
-    total += price;
+document.getElementById("cartItems").appendChild(li);
 
-    document.getElementById("total").innerText = total;
+total += price;
+
+document.getElementById("total").innerHTML = total;
 }
 
 function checkout(){
 
-    let finalPrice = total;
+finalPrice = total;
 
-    if(total >= 300){
-        finalPrice = total - 20;
-    }
+if(total >= 300){
+finalPrice = total - 20;
+}
 
-    document.getElementById("result").innerHTML =
-    "ยอดชำระสุทธิ = " + finalPrice + " บาท";
+document.getElementById("result").innerHTML =
+"ยอดสุทธิที่ต้องชำระ : " + finalPrice + " บาท";
+}
+
+function payNow(){
+
+if(total === 0){
+alert("กรุณาเลือกสินค้า");
+return;
+}
+
+checkout();
+
+alert(
+"ชำระเงินสำเร็จ\nยอดชำระ " +
+finalPrice +
+" บาท\nขอบคุณที่ใช้บริการ Station Cafe"
+);
+
+document.getElementById("cartItems").innerHTML="";
+document.getElementById("total").innerHTML="0";
+document.getElementById("result").innerHTML="";
+
+total = 0;
+finalPrice = 0;
 }
 
 </script>
