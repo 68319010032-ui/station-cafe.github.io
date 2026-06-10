@@ -1,204 +1,25 @@
-<!DOCTYPE html>
-<html lang="th">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Station Cafe</title>
-<link rel="stylesheet" href="style.css">
-</head>
-<body>
-
-<header>
-    <h1>☕ Station Cafe</h1>
-    <nav>
-        <a href="#home">หน้าแรก</a>
-        <a href="#about">เกี่ยวกับร้าน</a>
-        <a href="#drinks">เมนูเครื่องดื่ม</a>
-        <a href="#bakery">เมนูเบเกอรี่</a>
-        <a href="#promo">โปรโมชั่น</a>
-        <a href="#contact">ติดต่อเรา</a>
-    </nav>
-</header>
-
-<section id="home" class="hero">
-    <h2>ยินดีต้อนรับสู่ Station Cafe</h2>
-    <p>คาเฟ่สถานีแวะพัก บรรยากาศอบอุ่น เครื่องดื่มและเบเกอรี่คุณภาพ</p>
-</section>
-
-<section id="about">
-    <h2>เกี่ยวกับร้าน</h2>
-    <p>
-        Station Cafe เป็นคาเฟ่สไตล์มินิมอล
-        ที่พร้อมเสิร์ฟกาแฟ ชา และเบเกอรี่สดใหม่ทุกวัน
-        เหมาะสำหรับนั่งพักผ่อน ทำงาน และพบปะสังสรรค์
-    </p>
-</section>
-
-<section id="drinks">
-    <h2>เมนูเครื่องดื่มแนะนำ</h2>
-
-    <div class="menu-grid">
-
-        <div class="item">
-            <h3>Americano</h3>
-            <p>60 บาท</p>
-            <button onclick="addToCart('Americano',60)">เพิ่มลงรถเข็น</button>
-        </div>
-
-        <div class="item">
-            <h3>Espresso</h3>
-            <p>65 บาท</p>
-            <button onclick="addToCart('Espresso',65)">เพิ่มลงรถเข็น</button>
-        </div>
-
-        <div class="item">
-            <h3>Latte</h3>
-            <p>70 บาท</p>
-            <button onclick="addToCart('Latte',70)">เพิ่มลงรถเข็น</button>
-        </div>
-
-        <div class="item">
-            <h3>Cappuccino</h3>
-            <p>70 บาท</p>
-            <button onclick="addToCart('Cappuccino',70)">เพิ่มลงรถเข็น</button>
-        </div>
-
-        <div class="item">
-            <h3>Mocha</h3>
-            <p>75 บาท</p>
-            <button onclick="addToCart('Mocha',75)">เพิ่มลงรถเข็น</button>
-        </div>
-
-        <div class="item">
-            <h3>Caramel Macchiato</h3>
-            <p>85 บาท</p>
-            <button onclick="addToCart('Caramel Macchiato',85)">เพิ่มลงรถเข็น</button>
-        </div>
-
-        <div class="item">
-            <h3>ชาไทย</h3>
-            <p>55 บาท</p>
-            <button onclick="addToCart('ชาไทย',55)">เพิ่มลงรถเข็น</button>
-        </div>
-
-        <div class="item">
-            <h3>ชาเขียว</h3>
-            <p>60 บาท</p>
-            <button onclick="addToCart('ชาเขียว',60)">เพิ่มลงรถเข็น</button>
-        </div>
-
-        <div class="item">
-            <h3>ชามะนาว</h3>
-            <p>50 บาท</p>
-            <button onclick="addToCart('ชามะนาว',50)">เพิ่มลงรถเข็น</button>
-        </div>
-
-        <div class="item">
-            <h3>ชาพีช</h3>
-            <p>60 บาท</p>
-            <button onclick="addToCart('ชาพีช',60)">เพิ่มลงรถเข็น</button>
-        </div>
-
-        <div class="item">
-            <h3>ชาแอปเปิ้ล</h3>
-            <p>60 บาท</p>
-            <button onclick="addToCart('ชาแอปเปิ้ล',60)">เพิ่มลงรถเข็น</button>
-        </div>
-
-        <div class="item">
-            <h3>โกโก้</h3>
-            <p>65 บาท</p>
-            <button onclick="addToCart('โกโก้',65)">เพิ่มลงรถเข็น</button>
-        </div>
-
-        <div class="item">
-            <h3>นมสดคาราเมล</h3>
-            <p>65 บาท</p>
-            <button onclick="addToCart('นมสดคาราเมล',65)">เพิ่มลงรถเข็น</button>
-        </div>
-
-        <div class="item">
-            <h3>นมชมพู</h3>
-            <p>55 บาท</p>
-            <button onclick="addToCart('นมชมพู',55)">เพิ่มลงรถเข็น</button>
-        </div>
-
-        <div class="item">
-            <h3>ชาอู่หลง</h3>
-            <p>60 บาท</p>
-            <button onclick="addToCart('ชาอู่หลง',60)">เพิ่มลงรถเข็น</button>
-        </div>
-
-        <div class="item">
-            <h3>Honey Lemon Tea</h3>
-            <p>65 บาท</p>
-            <button onclick="addToCart('Honey Lemon Tea',65)">เพิ่มลงรถเข็น</button>
-        </div>
-
-        <div class="item">
-            <h3>Black Coffee Orange</h3>
-            <p>80 บาท</p>
-            <button onclick="addToCart('Black Coffee Orange',80)">เพิ่มลงรถเข็น</button>
-        </div>
-
-        <div class="item">
-            <h3>Matcha Latte</h3>
-            <p>85 บาท</p>
-            <button onclick="addToCart('Matcha Latte',85)">เพิ่มลงรถเข็น</button>
-        </div>
-
-        <div class="item">
-            <h3>Dirty Coffee</h3>
-            <p>95 บาท</p>
-            <button onclick="addToCart('Dirty Coffee',95)">เพิ่มลงรถเข็น</button>
-        </div>
-
-        <div class="item">
-            <h3>Signature Station</h3>
-            <p>99 บาท</p>
-            <button onclick="addToCart('Signature Station',99)">เพิ่มลงรถเข็น</button>
-        </div>
-
-    </div>
-</section>
-
-<section id="bakery">
-    <h2>เมนูเบเกอรี่</h2>
-
-    <ul>
-        <li>ครัวซองต์ - 45 บาท</li>
-        <li>เค้กช็อกโกแลต - 65 บาท</li>
-        <li>เค้กส้ม - 65 บาท</li>
-        <li>บราวนี่ - 50 บาท</li>
-        <li>ชีสเค้ก - 75 บาท</li>
-    </ul>
-</section>
-
-<section id="promo">
-    <h2>โปรโมชั่น</h2>
-    <div class="promo-box">
-        ซื้อเครื่องดื่ม 2 แก้ว ลด 10%
-    </div>
-</section>
-
-<section class="cart">
-    <h2>🛒 รถเข็นสินค้า</h2>
-    <ul id="cart-items"></ul>
-    <h3>รวมทั้งหมด: <span id="total">0</span> บาท</h3>
-</section>
-
-<section id="contact">
-    <h2>ติดต่อเรา</h2>
-    <p>โทร : 08X-XXX-XXXX</p>
-    <p>Facebook : Station Cafe</p>
-    <p>Line : @stationcafe</p>
-</section>
-
-<footer>
-    <p>© 2026 Station Cafe</p>
-</footer>
-
-<script src="script.js"></script>
-
-</body>
-</html>
+station-cafe/
+│
+├── index.html          (หน้าแรก)
+├── about.html          (เกี่ยวกับร้าน)
+├── drinks.html         (เมนูเครื่องดื่ม)
+├── bakery.html         (เมนูเบเกอรี่)
+├── promotion.html      (โปรโมชั่น)
+├── contact.html        (ติดต่อเรา)
+│
+├── login.html          (เข้าสู่ระบบ)
+├── register.html       (สมัครสมาชิก)
+├── cart.html           (รถเข็นสินค้า)
+├── checkout.html       (ชำระเงิน)
+│
+├── css/
+│   └── style.css
+│
+├── js/
+│   ├── script.js
+│   └── cart.js
+│
+├── images/
+│
+└── database/
+    └── station_cafe.sql
